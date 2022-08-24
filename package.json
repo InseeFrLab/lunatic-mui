@@ -60,6 +60,7 @@
         "@storybook/react": "^6.5.10",
         "@storybook/testing-library": "^0.0.13",
         "@types/node": "^16.4.9",
+        "@types/react": "^18.0.17",
         "@typescript-eslint/eslint-plugin": "^4.28.5",
         "@typescript-eslint/parser": "^4.28.5",
         "babel-loader": "^8.2.5",
