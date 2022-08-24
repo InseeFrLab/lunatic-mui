@@ -5,8 +5,8 @@
     <i></i>
     <br>
     <br>
-    <a href="https://github.com/garronej/lunatic-mui/actions">
-      <img src="https://github.com/garronej/lunatic-mui/workflows/ci/badge.svg?branch=main">
+    <a href="https://github.com/ddecrulle/lunatic-mui/actions">
+      <img src="https://github.com/ddecrulle/lunatic-mui/workflows/ci/badge.svg?branch=main">
     </a>
     <a href="https://bundlephobia.com/package/lunatic-mui">
       <img src="https://img.shields.io/bundlephobia/minzip/lunatic-mui">
@@ -14,7 +14,7 @@
     <a href="https://www.npmjs.com/package/lunatic-mui">
       <img src="https://img.shields.io/npm/dw/lunatic-mui">
     </a>
-    <a href="https://github.com/garronej/lunatic-mui/blob/main/LICENSE">
+    <a href="https://github.com/ddecrulle/lunatic-mui/blob/main/LICENSE">
       <img src="https://img.shields.io/npm/l/lunatic-mui">
     </a>
 </p>
