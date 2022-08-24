@@ -1,6 +1,6 @@
 {
     "name": "lunatic-mui",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Library of questionnaire components using Material UI",
     "repository": {
         "type": "git",
