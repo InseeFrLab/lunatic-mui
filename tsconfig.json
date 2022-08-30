@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
         "module": "CommonJS",
+        "baseUrl": "src",
         "target": "es5",
-        "lib": ["es2015", "DOM"],
+        "lib": ["es2015", "DOM", "esnext"],
         "esModuleInterop": true,
         "declaration": true,
         "outDir": "./dist",
@@ -14,7 +15,10 @@
         "strict": true,
         "downlevelIteration": true,
         "jsx": "react-jsx",
-        "noFallthroughCasesInSwitch": true
+        "noFallthroughCasesInSwitch": true,
+        "allowJs": true,
+        "resolveJsonModule": true
     },
-    "include": ["src"]
+    "include": ["src"],
+    "exclude": ["bin/", "src/test"]
 }
