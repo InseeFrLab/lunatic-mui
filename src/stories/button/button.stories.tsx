@@ -1,13 +1,11 @@
 import { Button } from "../../ui/components/Button";
-import { Meta, Story } from "@storybook/react";
+import { getStoryFactory } from "../getStory";
 
-export default {
-    title: "Components/Button",
-    component: Button,
-} as Meta;
+const { meta, getStory } = getStoryFactory({
+    sectionName: "Components/Button",
+    "wrappedComponent": { Button },
+});
 
-export const Template: Story = args => <Button {...args} />;
+export default meta;
 
-export const Default = Template.bind({});
-
-Default.args = {};
+export const Default = getStory({ label: "Disiz Button" });

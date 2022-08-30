@@ -7,10 +7,11 @@ export type ButtonProps = {
     disabled?: boolean;
     label?: string;
     className?: string;
+    variant?: "primary" | "secondary" | "tertiary" | "quatertiary";
 };
 
 export const Button = memo((props: ButtonProps) => {
-    const { children, onClick, disabled, label, className } = props;
+    const { children, onClick, disabled, label, className, variant } = props;
 
     return (
         <DisizButton
@@ -18,6 +19,7 @@ export const Button = memo((props: ButtonProps) => {
             onClick={onClick}
             disabled={disabled}
             className={className}
+            variant={variant}
         />
     );
 });
