@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../../ui/components/Button";
-import lunatic from "@inseefr/lunatic";
+import * as lunatic from "@inseefr/lunatic";
 
 export type Props = {
     goPrevious: () => void;
