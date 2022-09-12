@@ -2,7 +2,7 @@ const path = require("path");
 const modulesDir = path.join(process.cwd(), "node_modules");
 
 // This config is due to lunatic : scss and antlr for fallback
-const WebpackConfigOverride = config => ({
+const webpackConfigOverride = config => ({
     ...config,
     "module": {
         ...config.module,
@@ -78,6 +78,6 @@ module.exports = {
     "core": {
         "builder": "webpack5",
     },
-    "managerWebpack": updateEmotionAliases,
-    "webpackFinal": updateEmotionAliases,
+    "managerWebpack": webpackConfigOverride,
+    "webpackFinal": webpackConfigOverride,
 };

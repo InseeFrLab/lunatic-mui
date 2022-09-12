@@ -21,6 +21,11 @@ const { meta, getStory } = getStoryFactory({
             control: { type: "object" },
             defaultValue: simpsons,
         },
+        data: {
+            table: { disable: false },
+            control: { type: "object" },
+            defaultValue: {},
+        },
     },
 });
 
