@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "module": "CommonJS",
+        "baseUrl": "src",
         "target": "es5",
         "lib": ["es2015", "DOM", "esnext"],
         "esModuleInterop": true,
