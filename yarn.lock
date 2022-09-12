@@ -1355,12 +1355,12 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
-"@inseefr/lunatic@^0.4.5-v2":
-  version "0.4.5-v2"
-  resolved "https://registry.yarnpkg.com/@inseefr/lunatic/-/lunatic-0.4.5-v2.tgz#06b9d804a045d395af40ce76ddaaaf335cfbd023"
-  integrity sha512-DHLvQJpmbwJOAlLrPo3qnrP+MhZAV0+TuvC01OXWunzaW1mYqzfRZ4bRois1BfLK76O/lfE6DQf23i7ZBeDWug==
+"@inseefr/lunatic@^0.4.10-v2":
+  version "0.4.10-v2"
+  resolved "https://registry.yarnpkg.com/@inseefr/lunatic/-/lunatic-0.4.10-v2.tgz#9bcf66272a4bf5e8f5a4a2105be6c408bd22785c"
+  integrity sha512-oBTSPH8cobZo2Bjo+RkOXHVehP29SCmd1ghLPvRtqAWdNHpdIbKKKW4eaveaEQGy9RcwlZ6JKlbD2gbERbLqKA==
   dependencies:
-    "@inseefr/trevas" "^0.1.0-bundle"
+    "@inseefr/trevas" "^0.1.15"
     "@inseefr/vtl-2.0-antlr-tools" "^0.1.0-bundle"
     antlr4 "4.8.0"
     classnames "^2.3.1"
@@ -1378,10 +1378,10 @@
     snowball "^0.3.1"
     string-tokenizer "^0.0.8"
 
-"@inseefr/trevas@^0.1.0-bundle":
-  version "0.1.14"
-  resolved "https://registry.yarnpkg.com/@inseefr/trevas/-/trevas-0.1.14.tgz#e05081f190467f035044f21da0fbcc3e655ca619"
-  integrity sha512-B4sui0+LZk5GjhDXgvthmb2AQn5uHCs6B7SrIin6X7KjSX5sVaALnvP89ZmprI6EEvPBduEAO95k4mSC7Kgtkg==
+"@inseefr/trevas@^0.1.15":
+  version "0.1.15"
+  resolved "https://registry.yarnpkg.com/@inseefr/trevas/-/trevas-0.1.15.tgz#e12245a6b45027878136de3d61d668b034ed3bbe"
+  integrity sha512-EKY9grC8DjeIiBIpXtJlHpX86eWdvNwZxV+AUXwooNyX8fB1sF1zt6iamgfkrVTPVPE+ySIWU6I+h8YQa0DxEw==
   dependencies:
     "@inseefr/vtl-2.0-antlr-tools" "0.1.0"
     antlr4 "4.8.0"
@@ -5349,7 +5349,7 @@ enhanced-resolve@^4.5.0:
     memory-fs "^0.5.0"
     tapable "^1.0.0"
 
-enhanced-resolve@^5.10.0:
+enhanced-resolve@^5.10.0, enhanced-resolve@^5.7.0:
   version "5.10.0"
   resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.10.0.tgz#0dc579c3bb2a1032e357ac45b8f3a6f3ad4fb1e6"
   integrity sha512-T0yTFjdpldGY8PmuXXR0PyQ1ufZpEGiHVrp7zHKB7jdR4qlmZHhONVM5AQOAWXuF/w3dnHbEQVrNptJgt7F+cQ==
@@ -10839,6 +10839,11 @@ strip-bom@^2.0.0:
   dependencies:
     is-utf8 "^0.2.0"
 
+strip-bom@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/strip-bom/-/strip-bom-3.0.0.tgz#2334c18e9c759f7bdd56fdef7e9ae3d588e68ed3"
+  integrity sha512-vavAMRXOgBVNF6nyEEmL3DBK19iRpDcoIwW+swQ+CbGiu7lju6t+JklA1MHweoWtadgt4ISVUsXLyDq34ddcwA==
+
 strip-eof@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/strip-eof/-/strip-eof-1.0.0.tgz#bb43ff5598a6eb05d89b59fcd129c983313606bf"
@@ -11206,6 +11211,24 @@ tsafe@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/tsafe/-/tsafe-1.0.0.tgz#ba214cd9d50e5ecd57af583e2ff210ba0bfb14ff"
   integrity sha512-4I2CYBIENMzW+AUHK2BTeNCbERBpCwL957HN+v9vYMBdaSlnEclT6eEOYqQgQit0oHbA8mP3HY/efcX0Gu49eQ==
+
+tsconfig-paths-webpack-plugin@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/tsconfig-paths-webpack-plugin/-/tsconfig-paths-webpack-plugin-4.0.0.tgz#84008fc3e3e0658fdb0262758b07b4da6265ff1a"
+  integrity sha512-fw/7265mIWukrSHd0i+wSwx64kYUSAKPfxRDksjKIYTxSAp9W9/xcZVBF4Kl0eqQd5eBpAQ/oQrc5RyM/0c1GQ==
+  dependencies:
+    chalk "^4.1.0"
+    enhanced-resolve "^5.7.0"
+    tsconfig-paths "^4.0.0"
+
+tsconfig-paths@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-4.1.0.tgz#f8ef7d467f08ae3a695335bf1ece088c5538d2c1"
+  integrity sha512-AHx4Euop/dXFC+Vx589alFba8QItjF+8hf8LtmuiCwHyI4rHXQtOOENaM8kvYf5fR0dRChy3wzWIZ9WbB7FWow==
+  dependencies:
+    json5 "^2.2.1"
+    minimist "^1.2.6"
+    strip-bom "^3.0.0"
 
 tslib@^1.8.1, tslib@^1.9.3:
   version "1.14.1"

@@ -51,7 +51,7 @@
     "homepage": "https://github.com/ddecrulle/lunatic-mui",
     "devDependencies": {
         "@babel/core": "^7.18.13",
-        "@inseefr/lunatic": "^0.4.5-v2",
+        "@inseefr/lunatic": "^0.4.10-v2",
         "@storybook/addon-actions": "^6.5.10",
         "@storybook/addon-essentials": "^6.5.10",
         "@storybook/addon-interactions": "^6.5.10",
