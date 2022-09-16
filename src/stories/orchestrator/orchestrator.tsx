@@ -25,7 +25,7 @@ const Pager = (props: Props) => {
 
 export type OrchestratorProps = {
     source: object;
-    data?: object;
+    data: object;
     management?: boolean;
     activeControls?: boolean;
     features?: string[];
@@ -47,21 +47,20 @@ export const OrchestratorForStories = (props: OrchestratorProps) => {
     const {
         source,
         data,
-        management,
-        activeControls,
+        management = false,
+        activeControls = false,
         features,
-        initialPage,
+        initialPage = "1",
         getStoreInfo,
-        missing,
-        shortcut,
-        activeGoNextForMissing,
+        missing = false,
+        shortcut = false,
+        activeGoNextForMissing = false,
         suggesterFetcher,
         autoSuggesterLoading,
         suggesters,
         preferences,
-        savingType,
         custom,
-        filterDescription,
+        filterDescription = true,
     } = props;
 
     const onLogChange = (e: React.ChangeEvent<HTMLInputElement>) => console.log("onChange", { ...e });
@@ -71,7 +70,6 @@ export const OrchestratorForStories = (props: OrchestratorProps) => {
         goNextPage,
         isFirstPage,
         isLastPage,
-        waiting,
         getErrors,
         getModalErrors,
         getCurrentErrors,
@@ -92,9 +90,10 @@ export const OrchestratorForStories = (props: OrchestratorProps) => {
     const errors = getErrors();
     const modalErrors = getModalErrors();
     const currentErrors = getCurrentErrors();
-    console.log("errors: ", errors);
-    console.log("modalErrors: ", modalErrors);
-    console.log("currentErrors: ", currentErrors);
+
+    // console.log("errors: ", errors);
+    // console.log("modalErrors: ", modalErrors);
+    // console.log("currentErrors: ", currentErrors);
 
     return (
         <div className="container">

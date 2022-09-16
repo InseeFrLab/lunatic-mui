@@ -21,14 +21,11 @@ const { meta, getStory } = getStoryFactory({
             control: { type: "object" },
             defaultValue: simpsons,
         },
-        data: {
-            table: { disable: false },
-            control: { type: "object" },
-            defaultValue: {},
-        },
     },
 });
 
 export default meta;
 
-export const Default = getStory({ source: simpsons });
+const data = {};
+
+export const Default = getStory({ source: simpsons, data: data });
