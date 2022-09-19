@@ -23,6 +23,8 @@ const Pager = (props: Props) => {
     );
 };
 
+const onLogChange = (e: React.ChangeEvent<HTMLInputElement>) => console.log("onChange", { ...e });
+
 export type OrchestratorProps = {
     source: object;
     data: object;
@@ -63,7 +65,6 @@ export const OrchestratorForStories = (props: OrchestratorProps) => {
         filterDescription = true,
     } = props;
 
-    const onLogChange = (e: React.ChangeEvent<HTMLInputElement>) => console.log("onChange", { ...e });
     const {
         getComponents,
         goPreviousPage,
@@ -87,8 +88,8 @@ export const OrchestratorForStories = (props: OrchestratorProps) => {
     });
 
     const components = getComponents();
-    const errors = getErrors();
-    const modalErrors = getModalErrors();
+    // const errors = getErrors();
+    // const modalErrors = getModalErrors();
     const currentErrors = getCurrentErrors();
 
     // console.log("errors: ", errors);

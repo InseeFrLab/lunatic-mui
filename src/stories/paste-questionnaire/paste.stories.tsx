@@ -4,9 +4,9 @@ import simpsons from "./source.json";
 import { getStoryFactory } from "../getStory";
 
 const { meta, getStory } = getStoryFactory({
-    sectionName: "Questionnaire/Paste ",
+    "sectionName": "Questionnaire/Paste",
     "wrappedComponent": { Orchestrator },
-    argTypes: {
+    "argTypes": {
         activeGoNextForMissing: {
             table: { disable: false },
             control: "boolean",
