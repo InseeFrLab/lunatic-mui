@@ -1,10 +1,10 @@
 {
     "name": "lunatic-mui",
-    "version": "0.0.2",
+    "version": "0.0.1",
     "description": "Library of questionnaire components using Material UI",
     "repository": {
         "type": "git",
-        "url": "git://github.com/ddecrulle/lunatic-mui.git"
+        "url": "git://github.com/InseeFrLab/lunatic-mui.git"
     },
     "main": "dist/index.js",
     "types": "dist/index.d.ts",

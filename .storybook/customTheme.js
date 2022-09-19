@@ -3,7 +3,7 @@ import { create } from "@storybook/theming";
 export const darkTheme = create({
     "base": "dark",
     "brandTitle": "Lunatic MUI",
-    "brandUrl": "https://github.com/ddecrulle/lunatic-mui",
+    "brandUrl": "https://github.com/InseeFrLab/lunatic-mui",
 
     "appBg": "#0A192E",
     "appContentBg": "#0A192E",
@@ -22,7 +22,7 @@ export const darkTheme = create({
 export const lightTheme = create({
     "base": "light",
     "brandTitle": "Lunatic MUI",
-    "brandUrl": "https://github.com/ddecrulle/lunatic-mui",
+    "brandUrl": "https://github.com/InseeFrLab/lunatic-mui",
 
     "appBg": "#F5F7FA",
     "appContentBg": "#F5F7FA",
