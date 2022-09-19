@@ -19,9 +19,7 @@
     </a>
 </p>
 <p align="center">
-  <a href="https://github.com/InseeFrLab/lunatic-mui">Home</a>
-  -
-  <a href="https://github.com/InseeFrLab/lunatic-mui">Documentation</a>
+  <a href="https://inseefrlab.github.io/lunatic-mui/" target="_blank"><img src="https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg"></a>
 </p>
 
 # Install / Import
