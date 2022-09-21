@@ -5,11 +5,12 @@ import * as lunatic from "@inseefr/lunatic";
 export type Props = {
     goPrevious: () => void;
     goNext: () => void;
+    getData(withRefreshedCalculated: boolean): void;
     isLast: boolean;
     isFirst: boolean;
 };
 const Pager = (props: Props) => {
-    const { goPrevious, goNext, isLast, isFirst } = props;
+    const { goPrevious, goNext, getData, isLast, isFirst } = props;
 
     return (
         <div className="pagination">
@@ -19,6 +20,7 @@ const Pager = (props: Props) => {
             <Button onClick={goNext} disabled={isLast}>
                 Next
             </Button>
+            <Button onClick={() => console.log(getData(true))}>Get Data</Button>
         </div>
     );
 };
@@ -73,6 +75,7 @@ export const OrchestratorForStories = (props: OrchestratorProps) => {
         isLastPage,
         getErrors,
         getModalErrors,
+        getData,
         getCurrentErrors,
     } = lunatic.useLunatic(source, data, {
         initialPage,
@@ -128,6 +131,7 @@ export const OrchestratorForStories = (props: OrchestratorProps) => {
                 goNext={goNextPage}
                 isLast={isLastPage}
                 isFirst={isFirstPage}
+                getData={getData}
             />
         </div>
     );

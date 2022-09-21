@@ -75,6 +75,7 @@
         "prettier": "^2.3.2",
         "sass-loader": "^13.0.2",
         "storybook-dark-mode": "^1.1.2",
+        "tsafe": "^1.0.1",
         "typescript": "^4.3.5"
     },
     "dependencies": {
@@ -82,6 +83,7 @@
         "@emotion/styled": "^11.10.4",
         "@mui/material": "^5.10.3",
         "disiz": "^0.0.6",
+        "powerhooks": "^0.20.17",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "tss-react": "^4.0.0"

@@ -1,10 +1,12 @@
 import { OrchestratorForStories as Orchestrator } from "../orchestrator";
-import simpsons from "./source.json";
+import styleExample from "./style-example.json";
 import * as custom from "../../ui";
 import { getStoryFactory } from "../getStory";
 
+console.log(custom);
+
 const { meta, getStory } = getStoryFactory({
-    "sectionName": "Questionnaire/Paste",
+    "sectionName": "Questionnaire/Questionnaire Test",
     "wrappedComponent": { Orchestrator },
     "argTypes": {
         activeGoNextForMissing: {
@@ -16,11 +18,6 @@ const { meta, getStory } = getStoryFactory({
             control: "boolean",
             defaultValue: true,
         },
-        source: {
-            table: { disable: false },
-            control: { type: "object" },
-            defaultValue: simpsons,
-        },
     },
 });
 
@@ -28,4 +25,4 @@ export default meta;
 
 const data = {};
 
-export const Default = getStory({ source: simpsons, data: data, custom: custom });
+export const Default = getStory({ source: styleExample, data: data, custom: custom });
