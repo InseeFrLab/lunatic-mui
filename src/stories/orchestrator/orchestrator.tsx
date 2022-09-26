@@ -73,8 +73,8 @@ export const OrchestratorForStories = (props: OrchestratorProps) => {
         goNextPage,
         isFirstPage,
         isLastPage,
-        getErrors,
-        getModalErrors,
+        // getErrors,
+        // getModalErrors,
         getData,
         getCurrentErrors,
     } = lunatic.useLunatic(source, data, {

@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import { memo } from "react";
 import { TextField } from "ui/theme";
 import { useConstCallback } from "powerhooks/useConstCallback";
 import type { TextFieldProps } from "ui/theme";

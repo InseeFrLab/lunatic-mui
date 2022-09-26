@@ -24,7 +24,7 @@ export function getStoryFactory<Props extends Record<string, any>>(params: {
         Props & {
             darkMode: boolean;
             width: number;
-            chromeFontSize: ChromeFontSize;
+            chromeFontSize: ChromeFontSize | string;
             targetWindowInnerWidth: number;
         }
     > = ({ darkMode, width, ...props }) => {
